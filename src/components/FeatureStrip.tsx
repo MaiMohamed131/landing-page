@@ -1,0 +1,3 @@
+import { Leaf, ChefHat, Diamond, Heart } from 'lucide-react';
+const features = [{ Icon: Leaf, title: 'Fresh Ingredients', text: 'Locally sourced & seasonal' }, { Icon: ChefHat, title: 'Expert Chefs', text: 'Passionate culinary artists' }, { Icon: Diamond, title: 'Elegant Atmosphere', text: 'Perfect for any occasion' }, { Icon: Heart, title: 'Unforgettable Taste', text: 'A dining experience to remember' }];
+export default function FeatureStrip() { return <section className="features" aria-label="The Savoré experience"><div className="container feature-grid">{features.map(({ Icon, title, text }) => <div className="feature" key={title}><Icon size={40} strokeWidth={1.15} aria-hidden="true"/><div><h2>{title}</h2><p>{text}</p></div></div>)}</div></section>; }

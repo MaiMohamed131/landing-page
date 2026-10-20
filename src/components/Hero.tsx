@@ -1,0 +1,5 @@
+import Image from 'next/image';
+import { ArrowRight, CalendarDays } from 'lucide-react';
+import Navbar from './Navbar';
+import Button from './ui/Button';
+export default function Hero() { return <section id="home" className="hero relative text-white"><Image src="/images/hero.jpg" alt="Beautifully prepared salmon with fresh seasonal accompaniments" fill priority sizes="100vw" className="hero-photo object-cover"/><div className="hero-shade absolute inset-0"/><Navbar /><div className="container relative hero-content"><p className="eyebrow">GOOD FOOD <span>•</span> GREAT COMPANY</p><h1>A Memorable<br /><span>Dining</span> Experience</h1><p className="hero-description">Discover a unique blend of flavors, crafted from the freshest<br className="desktop-break"/> ingredients, in a warm and elegant atmosphere.</p><div className="hero-buttons flex flex-wrap gap-6"><Button>View Our Menu<ArrowRight size={18}/></Button><Button outline><CalendarDays size={22}/>Book a Table</Button></div></div></section>; }
